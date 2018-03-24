@@ -1,10 +1,15 @@
 /*Css Reset*/
 * {
 	box-sizing: border-box;
+	margin:0;
 	padding: 0;
-	margin: 0;
 	vertical-align: baseline;
 	list-style: none;
 	border: 0;
 }
- /* CSS STYLES*/ 
+
+.header {
+	background: #00654a;
+	width: 100%;
+	height: 80px;
+}
