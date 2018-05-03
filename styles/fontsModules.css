@@ -1,0 +1,59 @@
+/*Classes para as Fontes*/
+	.Gugi 	 { font-family: Gugi; }
+	.RobotoL { font-family: Roboto-Light; }
+	.RobotoR { font-family: Roboto-Regular; }
+	.RobotoB { font-family: Roboto-Black; }
+	.OpSansL { font-family: OpenSans-Light; }
+	.OpSansR { font-family: OpenSans-Regular; }
+	.OpSansB { font-family: OpenSans-Bold; }
+	.CinzelR { font-family: Cinzel-Regular; }
+	.CinzelB { font-family: Cinzel-Bold; }
+
+/*ROBOTO FONTS*/
+	@font-face {
+		font-family : 'Roboto-Light';
+		src: url('../fonts/Roboto/Roboto-Light.ttf');
+	}
+
+	@font-face {
+		font-family: 'Roboto-Regular';
+		src: url('../fonts/Roboto/Roboto-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Roboto-Black';
+		src: url('../fonts/Roboto/Roboto-Black.ttf');
+	}
+
+/*OPEN SANS FONTS*/
+	@font-face {
+		font-family: 'OpenSans-Light';
+		src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+	}
+
+	@font-face {
+		font-family: 'OpenSans-Regular';
+		src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'OpenSans-Bold';
+		src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+	}
+
+/*GUGI FONT*/
+	@font-face {
+		font-family: 'Gugi';
+		src: url('../fonts/Gugi/Gugi-Regular.ttf');
+	}
+
+/*CINZEL FONTS*/
+	@font-face {
+		font-family: 'Cinzel-Regular';
+		src: url('../fonts/Cinzel/Cinzel-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Cinzel-Bold';
+		src: url('../fonts/Cinzel/Cinzel-Bold.ttf');
+	}

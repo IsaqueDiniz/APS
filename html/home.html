@@ -3,66 +3,147 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>EcoTec-Home</title> 
-		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eletrizando! - HOME</title>
+		<link rel="stylesheet" href="../styles/fontsModules.css">
+		<link rel="stylesheet" href="../styles/home.css">
 	</head>
 
 	<body>
+
+		<!-- CABEÇALHO -->
+		<header class="header" id="header">
+
+			<h1 class="headerTitulo" id="eletrizandoTitulo">Eletrizando!</h1>
+			<img src="../img/carro2.png" class="logo">
+			<button class="btn" id="openMenuBtn"><img src="../img/menu-btn2.png" class="imgBTN"></button>
+
+		</header> <!-- FIM DO CABEÇALHO -->
+
+
+		<nav class="nav" id="barraNav"><!-- BARRA DE NAVEGAÇÃO mobile -->
+			<button class="fecharBTN" id="closeMenuBtn">X</button>
+			<ul class="menu" id="ulMenu">
+				<li><a href="">HOME</a></li>
+				<li><a href="">Ranking Da Sustentabilidade</a></li>
+				<li><a href="">Modelos de Carros</a></li>
+				<li><a href="">Tecnologia e Natureza</a></li>
+			</ul>
+		</nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+
+		<nav class="nav1000px" id="nav1000px"> <!-- BARRA DE NAVEGAÇÃO 1000px+ -->
+			<h3 class="navTitle" id="titulo_Nav">Eletrizando!</h3>
+			<ul class="menu1000px" id="">
+				<li><a href="">HOME</a></li>
+				<li><a href="">Ranking Da Sustentabilidade</a></li>
+				<li><a href="">Modelos de Carros</a></li>
+				<li><a href="">Tecnologia e Natureza</a></li>
+			</ul>
+		</nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+
+
+		<aside class="aside" id="indice"> <!-- indice -->
+		<button class="fIndiceBTN" id="fechaIndiceBTN"><</button>	
+			<ul id="indiceUl">
+				<li><a href="#introducao">Introdução</a></li>
+				<li><a href="#historico">Histórico</a></li>
+				<li><a href="#diferencas">Diferenças entre Motores</a></li>
+				<li><a href="#tiposDeCarros">Tipos de Carros Elétricos</a></li>
+				<li><a href="#vantagens_desvantagens">Vantagens e Desvantagens</a></li>
+			</ul>
+			
+		</aside>
+
+		<button class="indiceBTN" id="abreIndiceBTN">></button>
 		
-		<header class="header">
-			<h1>EcoTec</h1>
-		
-			<nav>
-				<ul>
-					<li><a href="" title="Energia Limpa" >Energia Limpa</a></li>
-					<li><a href="" title="Artigos" >História</a></li>
-					<li><a href="" title="Ações Sustentáveis" >Ações Sustentáveis</a></li>
-					<li><a href="" title="FAQ" >FAQ</a></li>
-				</ul>
-			</nav>
-	
-			<img src="../img/banner.jpg" class="banner">
 
-		</header>
+		<main> <!-- COMEÇO DO CONTEÚDO -->
 
-		<!-- Contéudo Principal -->
-		<main class="mainContainer"> 
-
-			<!-- Slider -->
-			<section class="slider">
-				<p>Slider</p>
+			<section id="introducao" class="intro secaoGlobal"> <!-- Introdução -->
+				<img src="../img/casa1.png" class="casa">
+				<img src="../img/carro3.png" class="carro3">
+				<p class="paragrafosGlobal"> Carros Elétricos e Desenvolvimento Sustentável, duas coisas que se completam!</p>
+			</section>
+			
+			<section id="historico" class="historico secaoGlobal"> <!-- Histórico -->
+				<p class="paragrafosGlobal"> Pode parecer uma ídeia moderna, mas a invenção do primeiro carro elétrico se dá por volta de 1880</p>
+				<figure>
+					<img class="imgHistorico" src="../img/thomasParkerCar.jpg">
+					<figcaption class="RobotoL">Carro elétrico de Thomas Parker-1880</figcaption>
+				</figure>			
 			</section>
 
-			<!-- Seção de Artigos -->
+			<section id="diferencas" class="diferencas secaoGlobal"> <!-- Diferenças -->
+				<h1 class="OpSansR">Diferenças entre os tipos de motores</h1>
+					<div>
+						<h3 class="RobotoR">Elétrico</h3>
+						<img class="diferencas_img" src="../img/motorElétrico.png">
+						<ul>
+							<li>Movido a energia elétrica</li>
+							<li>Um grupo de baterias recarregaveis alimentam o motor</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="RobotoR">Combustão</h3>
+						<img class="diferencas_img" src="../img/motorCombustão.png">
+						<ul>
+							<li>Movido pela reação entre combustível, oxigênio e calor</li>
+							<li>Explosão controlada que gera energia cinética</li>
+						</ul>
+					</div>
+				</ul>
+			</section>
 
-			<section class="articleSection"> 
+			<section id="tiposDeCarros" class="tiposDeCarros secaoGlobal"> <!-- Tipos de Carros -->
+				<h1>Tipos de Carros Elétricos</h1>
+				<div>
+					<h3>Inteiramente Elétrico</h3>
+					<p class="paragrafoTiposCarros">Não possui motor a combustão, totalmente alimentado por baterias</p>
+				</div>
+				<div>
+					<h3>Hibrido Plug-In</h3>
+					<p class="paragrafoTiposCarros">Inteiramente elétrico, mas possui um pequeno motor a combustão que pode recarregar as baterias</p>
+				</div>
+				<div>
+					<h3>Hibrído</h3>
+					<p class="paragrafoTiposCarros">Não carrega por "tomada", possui ambos motores, em altas velocidades o de combustão atua, em baixar o motor elétrico.
+				</div>
+			</section>
 
-				<article .class="articlePR">
-					<h3 class="articleTitlePR">Titulo do Artigo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend libero in libero aliquet, sed sodales magna congue. Proin velit justo, scelerisque eget massa consequat, volutpat aliquam nibh. Vestibulum est turpis, luctus eget auctor sed, pharetra a ante. Sed tristique orci purus, vitae auctor ipsum fermentum quis. Morbi risus est, lacinia vitae sollicitudin semper, fermentum et lorem. Aliquam feugiat sem ante, quis ultricies odio viverra at. Praesent dapibus ligula id ante pulvinar finibus. Nulla convallis scelerisque nibh, in hendrerit purus interdum id. Proin ipsum nisi, fermentum vitae cursus nec, dapibus tempor nunc. Aliquam maximus pretium lectus. Donec consectetur sapien ultricies, sagittis nisl vitae, faucibus risus. Phasellus scelerisque lacus sem, at molestie lectus molestie at. Sed imperdiet at arcu vitae maximus. Morbi a nisi a justo iaculis posuere.</p>
-				
-				</article>
+			<section id="vantagens_desvantagens" class="vantagens_desv secaoGlobal"> <!-- Vantagens e Desvantagens -->
+				<img src="../img/arvore.png">				
+				<div>
+					<h3>Vantagens</h3>
+					<ul>
+						<li>Melhor qualidade do ar, em grandes centros urbanos</li>
+						<li>Diminuição do consumo de combustíveis</li>
+						<li>Diminuição da poluição sonora</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Desvantagens</h3>
+					<ul>
+						<li>Autonomia</li>
+						<li>Preços e custos de produção elevados</li>
+						<li>Requer infraestrutura</li>
+					</ul>
+				</div>
+			</section>
 
-				<article .class="articlePR">
-					<h3 class="articleTitlePR">Titulo do Artigo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend libero in libero aliquet, sed sodales magna congue. Proin velit justo, scelerisque eget massa consequat, volutpat aliquam nibh. Vestibulum est turpis, luctus eget auctor sed, pharetra a ante. Sed tristique orci purus, vitae auctor ipsum fermentum quis. Morbi risus est, lacinia vitae sollicitudin semper, fermentum et lorem. Aliquam feugiat sem ante, quis ultricies odio viverra at. Praesent dapibus ligula id ante pulvinar finibus. Nulla convallis scelerisque nibh, in hendrerit purus interdum id. Proin ipsum nisi, fermentum vitae cursus nec, dapibus tempor nunc. Aliquam maximus pretium lectus. Donec consectetur sapien ultricies, sagittis nisl vitae, faucibus risus. Phasellus scelerisque lacus sem, at molestie lectus molestie at. Sed imperdiet at arcu vitae maximus. Morbi a nisi a justo iaculis posuere.</p>
-				
-				</article>
+		</main> <!-- FIM DO CONTEÚDO  -->
 
-				<article .class="articlePR">
-					<h3 class="articleTitlePR">Titulo do Artigo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend libero in libero aliquet, sed sodales magna congue. Proin velit justo, scelerisque eget massa consequat, volutpat aliquam nibh. Vestibulum est turpis, luctus eget auctor sed, pharetra a ante. Sed tristique orci purus, vitae auctor ipsum fermentum quis. Morbi risus est, lacinia vitae sollicitudin semper, fermentum et lorem. Aliquam feugiat sem ante, quis ultricies odio viverra at. Praesent dapibus ligula id ante pulvinar finibus. Nulla convallis scelerisque nibh, in hendrerit purus interdum id. Proin ipsum nisi, fermentum vitae cursus nec, dapibus tempor nunc. Aliquam maximus pretium lectus. Donec consectetur sapien ultricies, sagittis nisl vitae, faucibus risus. Phasellus scelerisque lacus sem, at molestie lectus molestie at. Sed imperdiet at arcu vitae maximus. Morbi a nisi a justo iaculis posuere.</p>
-				
-				</article>
 
-			</section> <!-- Fim dos Artigos -->
+		<footer class="footer secaoGlobal"> <!-- COMEÇO DO RODAPÉ -->
 
-		</main><!-- Fim de Main -->
-		<!-- Começo do Rodapé -->
-		<footer class="footer">
 
-		</footer>	
+		</footer><!-- FIM DO RODAPÉ -->
 
+		<a href="#introducao" class="ancoraTOP">Topo</a>
+
+	<script src="../JS/jquery-3.3.1.js"></script>
+	<script src="../JS/jquery.easing.1.3.js"></script>
+	<script src="../JS/jquery.easing.compatibility.js"></script>
+	<script src="../JS/scripts.js"></script>
 	</body>
 
 </html>

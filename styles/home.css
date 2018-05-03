@@ -1,0 +1,584 @@
+/*Estilos da página inicial*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html, body {
+	font-size: 16px;
+}
+
+
+a.ancoraTOP {
+	position: fixed;
+	bottom: 0px;
+	right: 5%;
+	background: #726541;
+	color: #FFD44B;
+	font-size: 0.80rem;
+	border-radius: 4px 4px 0px 0px;
+	padding: 0.5em;
+	font-family: Roboto-Regular;
+}
+	
+/*Medidas flexíveis, focado em MobileFirst*/
+
+.header { /*Propriedades do CABEÇALHO*/
+	width: 100vw;
+	background: #8AA7FF;
+	position: sticky;
+	top: 0px;
+	padding: 2.5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 10px grey;
+}
+
+.nav1000px { /*Deixa essa nav visivel apenas em telas maiores que 1000px*/
+	display: none;
+}
+
+h1.headerTitulo { /*Propriedades do Titulo*/
+	order: 2;
+	font-family: Gugi;
+	color: #f0f0f0;
+	background: #F3666B;
+	font-size: 2.5rem;
+	border-radius: 10px 10px;
+	padding: 0.1em 0.1em;
+	text-shadow: 1px 1px 1px black;
+	box-shadow: 0px 0px 10px #D45050;
+}
+
+img.logo { /*Propriedades da LOGO*/
+	order: 1;
+	max-width: 15%;
+	max-height: 15%;
+}
+
+button.btn { /*Estiliza botão de menu*/
+	order: 3;
+	border: 0;
+	width: 36px;
+	background: #0046B8;
+	border-radius: 5px 5px;
+	font-size: 1.5rem;
+	transition: 150ms ease-in;
+}
+
+button.btn:hover { /*frescurinhas no ao passar mouse*/
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: 150ms ease-in;
+}
+
+img.imgBTN { /*coloca imagem de menu dentro do botão*/
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+nav.nav { /*Propriedades da Nav*/
+	width: 1px;
+	height: 75%;
+	float: right;
+	background: transparent;
+	border-radius: 0px 0px 0px 20px;
+	padding: 0.5em 0.5em;
+	right: 0vw;		
+	position: fixed;
+	transition: 150ms ease-in;
+	border-top: initial;
+}
+
+.nav ul { /*ajusta ul dentro da nav*/
+	list-style: none;
+	text-align: center;
+	visibility: hidden;
+	font-size: 2rem;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0.5em;
+}
+
+.nav ul li { /*coloca espaçamento entre as li*/
+	padding: 0.25em 0;
+	background: #648ed1;
+	border-radius: 5px 5px;
+}
+
+.nav ul li  a { /*arruma os links*/
+	color: #f0f0f0;
+	font-family: Roboto-Black;
+	text-transform: uppercase;
+}
+
+button.fecharBTN { /*botão que fecha menu*/
+	width: 30px;
+	height: 30px;
+	float: left;
+	background: darkred;
+	border: 0;
+	visibility: hidden;	
+	color: #f0f0f0;
+	font-weight: bold;
+	transition: 150ms ease-in;
+}
+
+button.fecharBTN:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: 150ms ease-in;
+}
+
+.aside { /*Indice*/
+	width: 1px;
+	padding: 0.5em;
+	background: transparent;
+	position: fixed;
+	float: right;
+	top: 35vh;
+	border-radius: 0px 0px 20px 0px;
+	transition: 150ms ease-in;
+}
+
+.aside ul { /*Lista do indice*/
+	list-style-position: inside;
+	visibility: hidden;
+	transition: 10ms ease-out;
+}
+
+.aside ul li {
+	margin: 0.25em 0;
+}
+
+.aside ul li a { 
+	color: #000000;
+	font-weight: bold;
+	font-family: Roboto-Light;
+}
+
+.indiceBTN { /*botao que abre o indice*/
+	background: #A09B11;
+	border: 0;
+	color: #FFE800;
+	font-weight: bold;
+	padding: 0 0.3em;
+	font-size: 1.5em;
+	position: fixed;
+	top: 35vh;
+	left: 0px;
+	transition: 150ms ease-in;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.indiceBTN:hover { /*frescurinhas no ao passar mouse*/
+	cursor: pointer;
+}
+
+.fIndiceBTN { /*botão que fecha indice*/
+	float: right;
+	border: 0;
+	background: darkred;
+	color: #f0f0f0;
+	font-size: 1.3em;
+	padding: 0 0.3em;
+	font-weight: bold;
+	visibility: hidden;
+	transition: 150ms ease-in;
+}
+
+.fIndiceBTN:hover {
+	cursor: pointer;
+	transform: scale(1.25);
+	transition: 150ms ease-in;
+}
+
+p.paragrafosGlobal { /*Classe com propriedades que se aplicam a qualquer paragrafo*/
+	font-family: OpenSans-Regular;
+	font-size: 1.8em;
+	border-radius: 5px 5px;
+	padding: 0.5em 0.1em;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, propriedades genericas que se aplicam a toda seções*/
+	width: 100vw;
+	padding: 5% 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.intro { /*Seção Introdução*/
+	min-height: 85vh;
+	background: /*#ACD4FF*/#E1E9FF;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.intro p { /*Paragrafo da Intro*/
+	color: /*#3C3A60*/;
+	box-shadow: 1px 1px 10px #ACD4FF;
+	background: #ACD4FF;
+}
+
+img.casa { /*imagem 1*/
+	max-width: 50%;
+	max-height: 50%;
+}
+
+img.carro3 { /*imagem2*/
+	border-radius: 180px 180px;
+	box-shadow: 0px 0px 10px grey;
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.historico { /*Seção Histórico*/
+	min-height: 85vh;
+	background: #FFF4AA;
+	align-items: center;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.historico p { /*Paragrafo da Histórico*/
+	background: #FFE93E;
+	box-shadow: 1px 1px 10px #FFE93E;
+	margin: 5%;
+}
+
+.historico figure { /*Ajusta as figures*/
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5%;
+}
+
+.historico figure img { /*Ajusta imagens*/
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px 5px;
+	box-shadow: 1px 1px 10px black;
+}
+
+.historico figure figcaption { /*legenda da img*/
+	margin: 1em auto;
+	text-shadow: 1px 1px 1px black;
+}
+
+.imgHistorico { /*flexibiliza imagem dentro do figure*/
+	width: 100%;
+	height: 100%;
+}
+
+.diferencas { /*Configurações da diferenças*/
+	background: #F1F1F1;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.diferencas h1 { /*titulo*/
+	font-size: 1.5rem;
+	text-align: center;
+	background: #DFDEDE;
+	border-radius: 5px 5px;
+	text-shadow: 1px 1px 1px black;
+	padding: 0.25em 0.25em;
+	box-shadow: 0px 0px 10px lightgrey;
+}
+
+.diferencas div { /*ajusta div */
+	width: 90%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 1em auto;
+}
+
+.diferencas_img { /*ajusta as duas imagens*/
+	width: 40%;
+	height: 40%;
+}
+
+.diferencas div h3 { /*titulo da div*/
+	font-size: 1.1em;
+	align-self: center;
+	letter-spacing: 0.1em;
+	background: #DFDEDE;
+	padding: 0.25em 0.25em;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.diferencas div ul { /*ul da div*/
+	list-style-position: inside;
+	font-family: Roboto-Light;
+	text-align: justify;
+	background: #DFDEDE;
+	padding: 0.25em 0.25em;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 5px lightgrey;
+	width: 100%;
+	margin: 5% auto;
+	font-size: 1.2em;
+}
+
+
+.tiposDeCarros { /*Seção de tipos de carros */
+	background: #FFCFCC;
+	min-height: 85vh;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+}
+
+.tiposDeCarros h1 { /*titulo da seção*/
+	font-family: OpenSans-Regular;
+	text-shadow: 1px 1px 1px black;
+	color: #f0f0f0;
+	background: #FF8A8A;
+	padding: 0.25em 0.25em;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 5px #FF8A8A;
+	margin: 2.5%;
+	font-size: 1.5rem;
+}
+
+.tiposDeCarros div { /*ajusta as divs*/
+	width: 100%;
+	background: #FFC6C2;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 5px #FFC6C2;
+	padding: 5% 5%;
+	margin: 2.5%;
+}
+
+.tiposDeCarros div h3 { /*titulo das divs*/
+	font-size: 1.2em;
+	font-family: OpenSans-Regular;
+	letter-spacing: 0.1em;
+}
+
+.paragrafoTiposCarros { /*estilo generico para os 3 paragrafos*/
+	font-family: Roboto-Regular;
+	font-size: 1em;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+.vantagens_desv  { /*seção*/
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+	background: #DAFFAA;
+	flex-flow: row wrap;
+	min-height: 85vh;
+}
+
+.vantagens_desv img { /*define img*/
+	width: 25%;
+}
+
+.vantagens_desv div { /*todas divs da seção*/
+	width: 90%;
+	padding: 1em 1em;
+	margin: 1em 0;
+	background: #B9F374;
+	margin: 0 auto;
+	font-family: OpenSans-Regular;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 10px lightgreen;
+	margin: 2.5%;
+}
+
+.vantagens_desv div ul { /*ajusta as bolinhas da ul*/
+	list-style-position: inside;
+}
+
+.footer { /*Rodapé*/
+	height: 80vh;
+	background: #5F5F5F;
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+	h1.headerTitulo { font-size: 2rem; } /*ajusta font do titulo*/
+}
+
+
+@media (min-width: 450px) {
+
+	.header { /*Cabeçalho*/ 
+		height: 12vw;
+		padding: 1%;
+		justify-content: space-around;
+	}
+
+	img.logo { /*Logo*/
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	button.btn { /*Botão*/
+		width: 36px;
+	}
+
+}
+
+@media (min-width: 600px) { /*BREAKPOINT*/
+
+	.header { /*Cabeçalho*/
+		padding: 1%;
+		height: 12vw;
+		justify-content: space-around;
+	}
+
+	img.logo { /*Logo*/
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	button.btn { /*Botão*/
+		width: 36px;
+	}
+
+	.diferencas h1 { /*Titulo da seção diferenças*/
+		margin: 0.5em;
+		font-size: 1.75rem;
+	}
+
+	.diferencas div h3 { /*Titulo da div*/
+		font-size: 1.1em;
+	}
+
+	.diferencas div ul { /*Ajusta fonte dos item da ul*/
+		font-size: 1.3rem;
+	}
+
+	.tiposDeCarros h1 { /*titulo*/
+		font-size: 1.75rem;
+	}
+
+	.tiposDeCarros div { 
+		font-size: 1.25rem;
+	}
+
+	.vantagens_desv div {
+		font-size: 1.25rem;
+	}
+
+}
+
+@media (min-width: 740px) { /*___|BREAKPOINT*/
+
+	.header {
+		height: 10vw;
+	}
+
+}
+
+@media (min-width: 900px) { /*___|BREAKPOINT*/
+
+	.header {
+		height: 8vw;
+	}
+
+}
+
+
+@media (min-width: 1000px) { /*___|BREAKPOINT*/
+
+	/*Mostra Nav em resoluções maiores, sem necessidade de menu*/
+
+	.header {
+		height: 100vh;
+		position: initial;
+		justify-content: center;
+	}
+
+	h1.headerTitulo {
+		font-size: 4rem;
+	}
+
+	button.btn {
+		display: none;
+	}
+
+	nav.nav {
+	/*width: 100vw;
+	background: #5C8EE0;
+	position: sticky;
+	top: 0px;
+	border-radius: initial;
+	box-shadow: 0px 5px 10px grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.25em 1em;*/
+		display: none;
+	}
+
+	nav.nav1000px { /*ajeita as propriedades da navbar para +1000px*/
+		width: 100vw;
+		background: #5C8EE0;
+		position: sticky;
+		top: 0px;
+		border-radius: initial;
+		box-shadow: 0px 5px 10px grey;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.25em 5%;
+	}
+
+	h3.navTitle {
+		font-family: Gugi;
+		color: #f0f0f0;
+		background: #F3666B;
+		font-size: 1.5rem;
+		letter-spacing: 0.1em;
+		border-radius: 10px 10px;
+		padding: 0.1em 0.1em;
+		text-shadow: 1px 1px 1px black;
+		transition: 300ms ease-out;
+	}
+
+	.nav1000px ul { /*ajusta ul dentro da nav*/
+		list-style: none;
+		visibility: initial;
+		display: flex;
+		width: 70%;	
+		align-items: center;
+	}
+
+	.nav1000px ul li {
+		margin: 0 1em;
+	}
+
+	.nav1000px ul li a {
+		font-family: Roboto-Regular;
+		color: #f0f0f0;
+		font-weight: bold;
+		font-size: 0.85rem;
+		transition: 150ms linear;
+	}
+
+	.nav1000px ul li a:hover {
+		color: #223F9B;
+		transition: 150ms linear;
+		font-size: 1rem;
+	}
+
+}
+
+
