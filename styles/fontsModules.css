@@ -1,13 +1,6 @@
 /*Classes para as Fontes*/
-	.Gugi 	 { font-family: Gugi; }
-	.RobotoL { font-family: Roboto-Light; }
-	.RobotoR { font-family: Roboto-Regular; }
-	.RobotoB { font-family: Roboto-Black; }
-	.OpSansL { font-family: OpenSans-Light; }
-	.OpSansR { font-family: OpenSans-Regular; }
-	.OpSansB { font-family: OpenSans-Bold; }
-	.CinzelR { font-family: Cinzel-Regular; }
-	.CinzelB { font-family: Cinzel-Bold; }
+
+.OpSansR { font-family: OpenSans-Regular; }
 
 /*ROBOTO FONTS*/
 	@font-face {
@@ -45,15 +38,4 @@
 	@font-face {
 		font-family: 'Gugi';
 		src: url('../fonts/Gugi/Gugi-Regular.ttf');
-	}
-
-/*CINZEL FONTS*/
-	@font-face {
-		font-family: 'Cinzel-Regular';
-		src: url('../fonts/Cinzel/Cinzel-Regular.ttf');
-	}
-
-	@font-face {
-		font-family: 'Cinzel-Bold';
-		src: url('../fonts/Cinzel/Cinzel-Bold.ttf');
 	}
