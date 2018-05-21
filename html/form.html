@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Envie uma mensagem - Eletrizando!</title>
+		<link rel="stylesheet" href="../styles/form.css">
+		<link rel="stylesheet" href="../styles/fontsModules.css">
+	</head>
+	
+	<body>
+
+		<h1 class="title">Eletrizando!</h1>
+
+		<form action="formSubmit.html" method="post" class="form">
+			<h3 class="formLabel">Preencha os dados</h3>
+				<ol>
+					<li>
+						<label for="nome" class="formLabel">Nome:</label>
+							<input type="text" name="nome" id="nome" placeholder="Nome">
+					</li>
+
+					<li>
+						<label for="email" class="formLabel">E-mail:<label>
+							<input type="text" name="email" id="email" placeholder="email@email.com">
+					</li>
+
+					<li>
+						<label for="msg" class="formLabel">Mensagem:</label><br>
+						<textarea cols="30" rows="15">
+							Digite a sua mensagem aqui...
+						</textarea>
+					</li>
+				</ol>
+			
+			<input type="reset" name="reset" class="btn">
+			<input type="submit" name="enviar" class="btn">
+		</form>
+	</body>
+
+</html>

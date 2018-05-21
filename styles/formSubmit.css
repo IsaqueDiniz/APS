@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-size: 16px;
+}
+
+.title {
+	font-family: Gugi;
+	color: #F09F9F;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.container {
+	padding: 1em;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 20px grey;
+	width: 80vw;
+	background: #E5FFB1;
+	margin: 0.5em auto;
+	font-family: Roboto-Regular;
+	text-align: center;
+}
+
+.homeBTN {
+	text-decoration: none;
+	color: #E5FFB1;
+	background: #557F01;
+	border: 1px solid transparent;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 0.3em 0.5em;
+	border-radius: 2px 2px;
+	transition: 75ms ease-out;
+}
+
+.homeBTN:hover {
+	color: #557F01;
+	border-color: #557F01;
+	background: transparent;
+	transition: 75ms ease-in;
+	transform: scale(1.025);
+}

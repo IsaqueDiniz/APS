@@ -28,7 +28,7 @@ a.ancoraTOP { /*ancora para o topo*/
 
 .header { /*Propriedades do CABEÇALHO*/
 	width: 100vw;
-	background: #8AA7FF;
+	background: #91aaff;
 	position: sticky;
 	top: 0px;
 	padding: 2.5%;
@@ -51,8 +51,7 @@ a.ancoraTOP { /*ancora para o topo*/
 		font-size: 2.5rem;
 		border-radius: 10px 10px;
 		padding: 0.1em 0.1em;
-		text-shadow: 1px 1px 1px black;
-		box-shadow: 0px 0px 10px #D45050;
+		text-shadow: 3px 1px 5px black;
 	}
 
 	img.logo { /*Propriedades da LOGO*/
@@ -121,6 +120,10 @@ a.ancoraTOP { /*ancora para o topo*/
 		background: #648ed1;
 		display: block;
 		border-radius: 10px 10px;
+	}
+
+	.nav ul li  a:hover {
+		background: #0654D1;
 	}
 
 	button.fecharBTN { /*botão que fecha menu*/
@@ -227,7 +230,7 @@ p.paragrafosGlobal { /*Classe com propriedades que se aplicam a qualquer paragra
 }
 
 /*Essa classe marca as seções com configurações genericas*/
-section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, propriedades genericas que se aplicam a toda seções*/
+section.secaoGlobal, footer.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, propriedades genericas que se aplicam a toda seções*/
 	width: 100vw;
 	padding: 5% 5%;
 	display: flex;
@@ -363,7 +366,7 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 
 /*Começo da quarta seção - TIPOS DE CARROS*/
 	.tiposDeCarros { /*Seção de tipos de carros */
-		background: #FFCFCC;
+		background: /*#FFCFCC*/ #F8E6E6;
 		min-height: 85vh;
 		justify-content: space-around;
 		align-content: space-around;
@@ -384,7 +387,7 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 
 	.tiposDeCarros div { /*ajusta as divs*/
 		width: 100%;
-		background: #FFC6C2;
+		background: #FFE3E1;
 		border-radius: 2px 2px;
 		box-shadow: 0px 0px 5px #FFC6C2;
 		padding: 5% 5%;
@@ -395,6 +398,11 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		font-size: 1.2em;
 		font-family: OpenSans-Regular;
 		letter-spacing: 0.1em;
+	}
+
+	.tiposDeCarros div img.imagem {
+		width: 25%;
+		margin: 0.5em;
 	}
 
 	.paragrafoTiposCarros { /*estilo generico para os 3 paragrafos*/
@@ -435,21 +443,251 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		list-style-position: inside;
 	}
 /*Fim da quinta seção*/
+/*Começo da sexta seção*/
+.rankingSusten {
+	background: #BEF7FF;
+	min-height: 85vh;
+	/*flex-direction: column;*/
+	align-items: center;
+}
+
+.rankingSusten h1 {
+	font-family: OpenSans-Regular;
+	text-shadow: 1px 1px 1px black;
+	padding: 0.25em 0.25em;
+	border-radius: 2px 2px;
+	margin: 2.5%;
+	font-size: 1.9rem;
+	color: #4AE9FF;
+	text-align: center;
+}
+
+.rankingSusten p {
+	font-size: 1em;
+	font-family: OpenSans-Light;
+	line-height: 1.5em;
+	text-align: justify;
+	text-shadow: 1px 1px 1px black;
+	width: 95%;
+	margin: ;
+}
+
+.rankingSusten ul {
+	background: #ABF5FF;
+	list-style-position: inside;
+	padding: 0.5em 0.5em;
+	border-radius: 2px 2px;
+	box-shadow: 0px 0px 5px grey;
+	font-family: Roboto-Light;
+	font-size: 1rem;
+	list-style-type: square;
+	margin: 0.5em auto;
+}
+
+.rankingSusten ul li:first-child {
+	list-style-type: none;
+	font-size: 1em;
+	font-family: OpenSans-Light;
+	text-shadow: 1px 1px 1px black;
+}
+
+.table {
+	border: 2px solid #05E1FF;
+	border-collapse: collapse;
+	background: #ABF5FF;
+	box-shadow: 0px 2.5px 5px grey;
+	margin: 1.5em auto;
+}
+
+.table tr td, tr th {
+	border: 2px solid #05E1FF;
+	padding: 0.3em 0.5em;
+	text-align: center;
+}
+
+.table .coloredRow {
+	background: #85F1FF;
+}
+
+
+.table caption {
+	font-family: Roboto-Regular;
+	font-size: 1.1rem;
+	border-top: 2px solid #05E1FF;
+	border-right: inherit;
+	border-left: inherit;
+	padding: 0.3em 0;
+}
+
+.table  th, td {
+	font-family: Roboto-Light;
+}
+/*Fim da sexta seção*/
+/*Começo da sétima seção*/
+.textSection {
+	background: #F7E1FF;
+	min-height: 85vh;
+	justify-content: center;
+	align-items: center;
+}
+
+h1.textSectionTitle {
+	font-family: OpenSans-Regular;
+	text-shadow: 1px 1px 1px black;
+	padding: 0.25em 0.25em;
+	border-radius: 2px 2px;
+	margin: 2.5%;
+	font-size: 1.9rem;
+	text-align: center;
+	color: #DB73FF;
+	background: #F5D7FF;
+
+}
+
+p.textSectionPar1 {
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: justify;
+	text-shadow: none;
+}
+
+p.textSectionPar1.textSectionPar2 {
+	font-size: 0px;
+	transition: 100ms linear;
+}
+
+.lerMaisBTN {
+	font-size: 1.25em;
+	padding: 0.3em 0.5em;
+	cursor: pointer;
+	background: #DB73FF;
+	color: #F7E1FF;
+	border: 1px solid transparent;
+	border-radius: 2.5px 2.5px;
+	font-family: Roboto-Regular;
+	transition: 75ms ease-out;
+	align-self: flex-end;
+}
+
+.lerMaisBTN:hover {
+	color: #DB73FF;
+	background: #F7E1FF;
+	border-color: #DB73FF;
+	transform: scale(1.025);
+	transition: 75ms ease-in;
+}
+
+/*fim da sétima seção*/
+
+/*Começo da oitava seção*/
+
+.modelosCarros {
+	min-height: 85vh;
+	background: #FFFDFD;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modelosCarros h1 {
+	font-family: OpenSans-Regular;
+	text-shadow: 1px 1px 1px black;
+	font-size: 1.9rem;
+	background: #f0f0f0;
+	padding: 0.3em 0.5em;
+	margin: 0.5em auto;
+}
+
+.modelosCarros figure {
+	background: #f0f0f0;
+	margin: 0.5em auto;
+	box-shadow: 0px 5px 5px grey;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.modelosCarros figure figcaption {
+	font-family: OpenSans-Light;
+}
+
+.modelosCarros figure img {
+	max-width: 100%;
+	margin: 0.5em 0;
+}
+/*fim da sétima seção*/
+
+a.ancoraFooter { display: none;}
+
 
 /*Propriedades do rodapé*/
 	.footer { /*Rodapé*/
-		height: 80vh;
+		min-height: 80vh;
 		background: #5F5F5F;
+		color: #CCCCCC;
+		font-family: Roboto-Regular;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		align-content: space-around;
 	}
+
+	.footerTitle {
+		font-family: Gugi;
+		color: #CCCCCC;
+		font-size: 2.5rem;
+	}
+
+	.sendMsgBTN {
+		padding: 0.5em 0.75em ;
+		color: #CCCCCC;
+		background: #424242;
+		border: 1px solid transparent;
+		border-radius: 2px 2px;
+		transition: 75ms ease-out;
+	}
+
+	.sendMsgBTN:hover {
+		color: #f0f0f0;
+		border-color: #424242;
+		background: #5F5F5F;
+		transition: 75ms ease-in;
+		transform: scale(1.025);
+	}
+
+	.footerInfo {
+		width: 90%;
+		text-align: justify;
+	}
+
+	.footerInfo span {
+		color: #f0f0f0;
+		text-decoration: underline;
+		text-decoration-color: #cccccc;
+	}
+
+	.footerDireitos {
+		margin-top: 3rem;
+		text-align: center;
+	}
+
+
 /*Fim do rodapé*/
 
 /*Começo do uso de media queries*/
 /*Ajustes leves*/
 
 @media (min-width: 450px) and (max-width: 550px) { /*BREAKPOINT*/
+
 	h1.headerTitulo { 
 		font-size: 2rem;
 	 } /*ajusta font do titulo*/
+}
+
+
+@media (max-width: 450px) {
+	img.logo {
+		max-width: 10%;
+		max-height: 10%;
+	}
 }
 
 
@@ -515,6 +753,10 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		font-size: 1.25rem;
 	}
 
+	h1.textSectionTitle {
+		font-size: 1.75rem;
+	}
+
 }
 
 
@@ -543,6 +785,12 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		height: 100vh;
 		position: initial;
 		justify-content: center;
+		flex-direction: column;
+	}
+
+	img.logo {
+		max-width:30%;
+		max-height: 50%;
 	}
 
 	h1.headerTitulo {
@@ -563,7 +811,7 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		position: sticky;
 		top: 0px;
 		border-radius: initial;
-		box-shadow: 0px 5px 10px grey;
+		box-shadow: 0px 1px 10px #484848;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -586,7 +834,7 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 		list-style: none;
 		visibility: initial;
 		display: flex;
-		width: 70%;	
+		width: 75%;	
 		align-items: center;
 	}
 
@@ -597,16 +845,40 @@ section.secaoGlobal { /*Igual a classe de cima, só que se aplica as seções, p
 	.nav1000px ul li a {
 		font-family: Roboto-Regular;
 		color: #f0f0f0;
+		padding: 0.5em 0.5em;
 		font-weight: bold;
 		font-size: 0.85rem;
-		transition: 150ms linear;
+		transition: 75ms ease-out;
 	}
 
 	.nav1000px ul li a:hover {
-		color: #223F9B;
-		transition: 150ms linear;
-		font-size: 1rem;
+		color: white;
+		background: #0056E0;
+		border-radius: 2px 2px;
+		transition: 75ms ease-in;
 	}
+
+	a.ancoraTOP {
+		display: none;
+	}
+
+	a.ancoraFooter {
+	font-size: 1rem;
+	background: #5F5F5F;
+	color: #CCCCCC;
+	font-family: Roboto-Regular;
+	display: block;
+	text-align: center;
+	padding: 0.1em 0.1em;
+	transition: 75ms ease-in;
+	}
+	
+	a.ancoraFooter:hover {
+	color: #f0f0f0;
+	background: #8F8F8F;
+	transition: 75ms ease-out;
+}
+
 
 }
 

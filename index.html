@@ -15,7 +15,7 @@
 		<header class="header" id="header">
 
 			<h1 class="headerTitulo" id="eletrizandoTitulo">Eletrizando!</h1>
-			<img src="img/carro2.png" class="logo">
+			<img src="img/Logo_gif.gif" class="logo">
 			<button class="btn" id="openMenuBtn"><img src="img/menu-btn2.png" class="imgBTN"></button>
 
 		</header> <!-- FIM DO CABEÇALHO -->
@@ -24,20 +24,20 @@
 		<nav class="nav" id="barraNav"><!-- BARRA DE NAVEGAÇÃO mobile -->
 			<button class="fecharBTN" id="closeMenuBtn">X</button>
 			<ul class="menu" id="ulMenu">
-				<li><a href="">HOME</a></li>
-				<li><a href="">Ranking Da Sustentabilidade</a></li>
-				<li><a href="">Tecnologia e Natureza</a></li>
-				<li><a href="">Modelos de Carros</a></li>
+				<li><a href="#introducao" id="link0">HOME</a></li>
+				<li><a href="#rankingSection" id="link1">Ranking Da Sustentabilidade</a></li>
+				<li><a href="#tecNatureza" id="link2">Tecnologia e Natureza</a></li>
+				<li><a href="#modelosCarros" id="link3">Modelos de Carros</a></li>
 			</ul>
 		</nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
 		<nav class="nav1000px" id="nav1000px"> <!-- BARRA DE NAVEGAÇÃO 1000px+ -->
 			<h3 class="navTitle" id="titulo_Nav">Eletrizando!</h3>
 			<ul class="menu1000px" id="">
-				<li><a href="">HOME</a></li>
-				<li><a href="">Ranking Da Sustentabilidade</a></li>
-				<li><a href="">Tecnologia e Natureza</a></li>
-				<li><a href="">Modelos de Carros</a></li>
+				<li><a href="#header">HOME</a></li>
+				<li><a href="#rankingSection">Ranking Da Sustentabilidade</a></li>
+				<li><a href="#tecNatureza">Tecnologia e Natureza</a></li>
+				<li><a href="#modelosCarros">Modelos de Carros</a></li>
 			</ul>
 		</nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
@@ -72,7 +72,8 @@
 				<figure>
 					<img class="imgHistorico" src="img/thomasParkerCar.jpg">
 					<figcaption>Carro elétrico de Thomas Parker-1880</figcaption>
-				</figure>			
+				</figure>
+				<p class="paragrafosGlobal">Companhias como <em>Baker Electric, Columbia Electric e Detroit Electric</em> no começo do século XX fabricavam carros elétricos. Em 1900, aproximadamente 20% dos carros dos Estados Unidos eram elétricos.</p>			
 			</section>
 
 			<section id="diferencas" class="diferencas secaoGlobal"> <!-- Diferenças -->
@@ -81,8 +82,8 @@
 						<h3>Elétrico</h3>
 						<img class="diferencas_img" src="img/motorElétrico.png">
 						<ul>
-							<li>Movido a energia elétrica</li>
-							<li>Um grupo de baterias recarregaveis alimentam o motor</li>
+							<li>Movido através de energia elétrica</li>
+							<li>Um grupo de baterias recarregáveis alimentam o motor</li>
 						</ul>
 					</div>
 					<div>
@@ -99,16 +100,19 @@
 			<section id="tiposDeCarros" class="tiposDeCarros secaoGlobal"> <!-- Tipos de Carros -->
 				<h1>Tipos de Carros Elétricos</h1>
 				<div>
-					<h3>Inteiramente Elétrico</h3>
-					<p class="paragrafoTiposCarros">Não possui motor a combustão, totalmente alimentado por baterias</p>
+					<h3>Inteiramente Elétricos</h3>
+					<img src="img/carro6.png" class="imagem">
+					<p class="paragrafoTiposCarros">Não possuem motor a combustão, totalmente alimentado por baterias</p>
 				</div>
 				<div>
 					<h3>Hibrido Plug-In</h3>
+					<img src="img/carro5.png" class="imagem">
 					<p class="paragrafoTiposCarros">Inteiramente elétrico, mas possui um pequeno motor a combustão que pode recarregar as baterias</p>
 				</div>
 				<div>
 					<h3>Hibrído</h3>
-					<p class="paragrafoTiposCarros">Não carrega por "tomada", possui ambos motores, em altas velocidades o de combustão atua, em baixar o motor elétrico.
+					<img src="img/carro7.png" class="imagem">
+					<p class="paragrafoTiposCarros">Não carrega por "tomada", possui ambos motores, em altas velocidades o de combustão atua, em baixas o motor elétrico.
 				</div>
 			</section>
 
@@ -117,7 +121,7 @@
 				<div>
 					<h3>Vantagens</h3>
 					<ul>
-						<li>Melhor qualidade do ar, em grandes centros urbanos</li>
+						<li>Melhora da qualidade do ar em grandes centros urbanos</li>
 						<li>Diminuição do consumo de combustíveis</li>
 						<li>Diminuição da poluição sonora</li>
 					</ul>
@@ -127,19 +131,100 @@
 					<ul>
 						<li>Autonomia</li>
 						<li>Preços e custos de produção elevados</li>
-						<li>Requer infraestrutura</li>
+						<li>Requer infraestrutura urbana (locais de abastecimento)</li>
 					</ul>
 				</div>
 			</section>
 
-			<section>
+			<section class="rankingSusten secaoGlobal" id="rankingSection"> <!-- RANKING Susten -->
 
+				<h1>Ranking da Sustentabilidade</h1>
+				<p class="">O Ranking da Sustentabilidade visa medir através de uma série de critérios o nível de desenvolvimento sustentável de determinado país.</p>
+				<ul>
+					<li>Critérios:</li>	
+					<li>Poluição do ar,</li>
+					<li>Uso dos recursos da natureza,</li>
+					<li>Qualidade de vida,</li>
+					<li>Fontes de energia,</li>
+					<li>Saúde Ambiental.</li>
+				</ul>
+
+				<table class="table">
+					<caption>Os 5 países mais sustentáveis</caption>
+
+					<tr class="coloredRow">
+						<th>Posição</th>	<th>País</th>		<th>Pontos(Máx. 100)</th>
+					</tr>
+					<tr>
+						<td>1</td>			<td>Finlândia</td>	<td>90,68</td>								
+					</tr>
+					<tr class="coloredRow">
+						<td>2</td>			<td>Islândia</td>	<td>90,51</td>								
+					</tr>
+					<tr>
+						<td>3</td>			<td>Suécia</td>		<td>90,43</td>								
+					</tr>
+					<tr class="coloredRow">
+						<td>4</td>			<td>Dinamarca</td>	<td>89,21</td>								
+					</tr>
+					<tr>
+						<td>5</td>			<td>Eslovênia</td>	<td>88,98</td>								
+					</tr>
+					<tr class="coloredRow">
+						<td>46</td>			<td>Brasil</td>		<td>78,90</td>								
+					</tr>
+				</table>
 			</section> 
+
+			<section class="textSection secaoGlobal" id="tecNatureza">
+				<h1 class="textSectionTitle"> Tecnologia e Natureza</h1>
+				<p class="textSectionPar1 paragrafosGlobal">Com a evolução da tecnologia, no século XXI, pode-se dizer que temos a chance de recuperar todo o prejuízo que causamos à natureza. É possivel fazer esta afirmação, pois através da evolução da tecnologia, a humanidade está ficando cada vez menos dependente de certos recursos limitados da natureza, como o petróleo e o carvão mineral.</p>
+				<p class="textSectionPar1 textSectionPar2 paragrafosGlobal" id="restoDoTexto">
+					Existem diversas formas do uso da Tecnologia para poupar recursos da natureza. Existem formas de adquirir e produzir energia que não prejudicam o meio ambiente, como: as Hidrelétricas, a Energia Eólica e Solar.<br><br>
+					A evolução da tecnologia também proporcionou a independência de alguns elementos do cotidiano, exemplos são os carros elétricos, que não necessitam de gasolina, assim, quanto maior for o seu uso pela população, menor será o uso do petróleo.<br><br>
+					O laço que pode ser criado entre a natureza e a tecnologia, se demonstra a maior arma no combate ao uso excessivo de recursos limitados, assim podendo prevenir desastres, devido a poluição e escassez.
+				</p>
+				<span class="lerMaisBTN" id="lerMaisBTN">Ler Mais</span>
+			</section>
+
+			<section class="modelosCarros secaoGlobal" id="modelosCarros"> <!-- Modelos de Carros -->
+				<h1>Modelos de Carros</h1>
+
+				<figure>
+					<img src="img/Nissan-Leaf.jpg">
+					<figcaption>Nissan Leaf, elétrico mais vendido do Japão; potência de 150 cavalos,<br> autonomia para até 320 quilômetros.</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/Toyota-Prius.jpg">
+					<figcaption>Toyota Prius, motor híbrido flex, produzido e importado do Japão.</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/Volvo_XC60_Hibrido.jpg">
+					<figcaption>Volvo XC60, híbrido com motor de combustão para as rodas dianteiras<br>apesar de ser plug-in com autonomia para rodar 50 quilômetros.</figcaption>
+				</figure>
+			</section>
 
 		</main> <!-- FIM DO CONTEÚDO  -->
 
+		<a href="#header" class="ancoraFooter">Ir para cima</a>
 
 		<footer class="footer secaoGlobal"> <!-- COMEÇO DO RODAPÉ -->
+			<h3 class="footerTitle">Eletrizando!</h3>
+			<p class="footerInfo">
+				<span>Quem Somos?</span>
+				<br>
+				Somos uma organização não governamental, formada por alunos de Ciência da Computação que busca relacionar a tecnologia e a natureza.
+				<br>
+				<br>
+				<span>Nossos Objetivos:</span>
+				<br>
+				Demonstrar que através da tecnologia, é possível atigir o desenvolvimento sustentável e fazer o uso dos recursos da natureza de forma consciente, focando no elemento do cotidiano: os carros.
+			</p>
+			<span>Contato: eletrizando@natureza.com</span> <a href="html/form.html" target="_self" class="sendMsgBTN">Envie uma mensagem</a>
+			<span class="footerDireitos"> © Todos os Direitos Reservados<br>
+													Eletrizando! </span>
 		</footer><!-- FIM DO RODAPÉ -->
 
 		<a href="#introducao" class="ancoraTOP">Topo</a>

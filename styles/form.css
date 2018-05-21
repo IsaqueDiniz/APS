@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-size: 16px;
+}
+
+.title {
+	font-family: Gugi;
+	color: #F09F9F;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.form {
+	width: 90vw;
+	font-family: Roboto-Regular;
+	margin: 0.5em auto;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	background: #DDF1FF;
+	padding: 1em;
+	border-radius: 4px 4px;
+	box-shadow: 0px 0px 20px grey;
+}
+
+.formLabel {
+	color: #008CFF;
+	font-weight: 700;
+}
+
+.form h3 {
+	background: #1796FF;
+	color: #DDF1FF;
+	border-radius: 2px 2px;
+	padding: 0.3em 0.5em;
+
+}
+
+
+.form ol {
+	list-style: none;
+}
+
+.form ol li {
+	margin: 2em;
+}
+
+.btn {
+	float: right;
+	border: 1px solid transparent;
+	background: #1796FF;
+	color: #DDF1FF;
+	padding: 0.3em 0.5em;
+	font-size: 1.025rem;
+	transition: 75ms ease-out;
+	margin: 0.25em auto;
+}
+
+.btn:hover {
+	border-color: #1796FF;
+	color:  #1796FF;
+	background: #DDF1FF;
+	cursor: pointer;
+	transition: 75ms ease-in;
+	transform: scale(1.025);
+}
+
+
+@media (min-width: 750px) {
+	.form {
+		width: 70vw;
+	}
+}
+
+@media (min-width: 1000px) {
+	.form {
+		width: 60vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.form {
+		width: 50vw;
+	}
+}
